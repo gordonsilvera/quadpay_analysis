@@ -2,6 +2,14 @@
 A list of functions used in the analysis.
 """
 
+import pandas as pd
+import datetime as dt
+
+
+def date_string_to_time(row):
+    t = dt.datetime.strptime(row.split('.')[0], '%Y-%m-%d %H:%M:%S')
+    return t
+
 def get_cumsum_by(df, by, values):
     df = df.sort_values(by=by)
     cumsum = df[by + values].groupby(by=by).sum().groupby(by=by, level=[0]).cumsum().reset_index()
@@ -23,3 +31,7 @@ def get_cumavg_by(df, by, values):
         suffixes=('', '_cum_avg')
     )
     return df
+
+
+
+
