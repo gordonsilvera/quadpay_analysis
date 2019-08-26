@@ -13,7 +13,7 @@ docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes jupyter/datascience-notebook
 Open the URL this command prints into your web browser. Open the Jupyter command line in Jupyter and run the following commands.
 ```
 git clone https://github.com/gordonsilvera/algom-trading.git
-pip install -U -r /home/jovyan/algom-trading/requirements.txt
+pip install -U -r /home/jovyan/quadpay_analysis/requirements.txt
 ```
 
 ### Contents
