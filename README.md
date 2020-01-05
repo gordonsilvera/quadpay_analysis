@@ -1,7 +1,12 @@
-# quadpay_analysis
-##### In Progress
+# Customer Risk Prediction
 
-An analysis of QuadPay orders data. 
+This analysis uses sample data from a payment platform that allows users to pay 
+merchants over 4 periods following the purchase. Using payment transaction-level 
+data, we have predicted the likelihood of a default in repayment.
+
+The focus of this analysis is to use Python to gain a basic understanding of the
+data and build features for the predictive model. We did not build a predictive
+model per se.
 
 ### Setup
 
@@ -10,7 +15,8 @@ Run the following commands to create a [Jupyter Data Science](https://hub.docker
 docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes jupyter/datascience-notebook
 ```
 
-Open the URL this command prints into your web browser. Open the Jupyter command line in Jupyter and run the following commands.
+Open the URL this command prints into your web browser. Open the Jupyter command 
+line in Jupyter and run the following commands.
 ```
 git clone https://github.com/gordonsilvera/algom-trading.git
 pip install -U -r /home/jovyan/quadpay_analysis/requirements.txt
